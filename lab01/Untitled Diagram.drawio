@@ -1,9 +1,65 @@
-<mxfile host="app.diagrams.net" modified="2023-10-10T19:30:51.031Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 OPR/102.0.0.0" version="21.7.4" etag="S6ELkbic-g9tApXnc25R" type="github">
+<mxfile host="app.diagrams.net" modified="2023-10-10T20:03:25.921Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 OPR/102.0.0.0" etag="cpI5CqXL_F8WFjm8WenU" version="21.7.4" type="github">
   <diagram name="Page-1" id="6mNBXjtlpJPp7EzaNWkX">
-    <mxGraphModel>
+    <mxGraphModel dx="1107" dy="630" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="8I_VYk_35e7VkTyWSSxo-1" value="ETL Pipeline" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="365" y="20" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8I_VYk_35e7VkTyWSSxo-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8I_VYk_35e7VkTyWSSxo-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="145" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8I_VYk_35e7VkTyWSSxo-2" value="Using inspect element to find API url, use request package to call NDAWN API" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="100" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="8I_VYk_35e7VkTyWSSxo-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8I_VYk_35e7VkTyWSSxo-5" target="8I_VYk_35e7VkTyWSSxo-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8I_VYk_35e7VkTyWSSxo-5" value="download two csv tables for monthly rainfall and monthly evaporation. use csv package to read the csv" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="120" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8I_VYk_35e7VkTyWSSxo-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8I_VYk_35e7VkTyWSSxo-6" target="8I_VYk_35e7VkTyWSSxo-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8I_VYk_35e7VkTyWSSxo-6" value="Create a feature class for each csv using arcpy.management.CreateFeatureclass, naming it and assigning it geometry of points" style="ellipse;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="570" y="70" width="250" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="8I_VYk_35e7VkTyWSSxo-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8I_VYk_35e7VkTyWSSxo-10" target="8I_VYk_35e7VkTyWSSxo-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8I_VYk_35e7VkTyWSSxo-10" value="use arcpy.management.AddField to name all the attribute fields for the feature class and set the data types.&amp;nbsp;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="650" y="270" width="160" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="8I_VYk_35e7VkTyWSSxo-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8I_VYk_35e7VkTyWSSxo-12" target="8I_VYk_35e7VkTyWSSxo-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8I_VYk_35e7VkTyWSSxo-12" value="using arcpy.da.InsertCursor, create a for-loop to go through the csv reader and insert row values for each point based off of the feature class fields you created." style="ellipse;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="350" y="230" width="180" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="8I_VYk_35e7VkTyWSSxo-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8I_VYk_35e7VkTyWSSxo-14" target="8I_VYk_35e7VkTyWSSxo-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8I_VYk_35e7VkTyWSSxo-14" value="set a variable name for the correct coordinate system you want to project both feature classes to (in this case, 26915 for WGS 1984 UTM Zone 15N)" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="300" width="230" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="8I_VYk_35e7VkTyWSSxo-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8I_VYk_35e7VkTyWSSxo-16" target="8I_VYk_35e7VkTyWSSxo-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8I_VYk_35e7VkTyWSSxo-16" value="use arcpy.management.DefineProjection to set the projection of both feature classes to the correct coordinate system using the variable you defined." style="ellipse;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="15" y="440" width="280" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="8I_VYk_35e7VkTyWSSxo-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8I_VYk_35e7VkTyWSSxo-18" target="8I_VYk_35e7VkTyWSSxo-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8I_VYk_35e7VkTyWSSxo-18" value="create a new variable for the joined dataset and use arcpy.management.AddJoin to join both attribute tables based off of the Post_Name field" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="330" y="485" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8I_VYk_35e7VkTyWSSxo-20" value="add the joined dataset to a geodatabase using arcpy.conversion.&lt;br&gt;FeatureClassToGeodatabase and save it to an appropriate location." style="ellipse;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="620" y="440" width="205" height="170" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
