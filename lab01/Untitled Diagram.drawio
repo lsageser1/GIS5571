@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-10-10T20:03:25.921Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 OPR/102.0.0.0" etag="cpI5CqXL_F8WFjm8WenU" version="21.7.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-10-10T21:31:06.371Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 OPR/102.0.0.0" etag="v-addwkM_GGNBjijEsY1" version="21.7.4" type="github">
   <diagram name="Page-1" id="6mNBXjtlpJPp7EzaNWkX">
-    <mxGraphModel dx="1107" dy="630" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1172" dy="667" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -42,7 +42,7 @@
         <mxCell id="8I_VYk_35e7VkTyWSSxo-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8I_VYk_35e7VkTyWSSxo-14" target="8I_VYk_35e7VkTyWSSxo-16">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="8I_VYk_35e7VkTyWSSxo-14" value="set a variable name for the correct coordinate system you want to project both feature classes to (in this case, 26915 for WGS 1984 UTM Zone 15N)" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+        <mxCell id="8I_VYk_35e7VkTyWSSxo-14" value="set a variable name for the correct coordinate system you want to project both feature classes to." style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="40" y="300" width="230" height="90" as="geometry" />
         </mxCell>
         <mxCell id="8I_VYk_35e7VkTyWSSxo-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8I_VYk_35e7VkTyWSSxo-16" target="8I_VYk_35e7VkTyWSSxo-18">
@@ -57,8 +57,14 @@
         <mxCell id="8I_VYk_35e7VkTyWSSxo-18" value="create a new variable for the joined dataset and use arcpy.management.AddJoin to join both attribute tables based off of the Post_Name field" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="330" y="485" width="250" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="8I_VYk_35e7VkTyWSSxo-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8I_VYk_35e7VkTyWSSxo-20" target="8I_VYk_35e7VkTyWSSxo-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="8I_VYk_35e7VkTyWSSxo-20" value="add the joined dataset to a geodatabase using arcpy.conversion.&lt;br&gt;FeatureClassToGeodatabase and save it to an appropriate location." style="ellipse;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="620" y="440" width="205" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="8I_VYk_35e7VkTyWSSxo-22" value="use arcpy.management.Project to define all the feature classes with the correct projected coordinate system" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="420" y="590" width="200" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
