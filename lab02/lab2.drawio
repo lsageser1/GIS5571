@@ -1,9 +1,400 @@
-<mxfile host="app.diagrams.net" modified="2023-11-09T23:27:33.164Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 OPR/104.0.0.0" version="22.1.0" etag="GJ0bVyhcvJdeWjDGirvN" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-10T02:12:39.268Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 OPR/104.0.0.0" etag="XuqwOVqIAhltTVEO4_XN" version="22.1.0" type="github">
   <diagram name="Page-1" id="OQd8S_JE7XS42at6qyB3">
-    <mxGraphModel>
+    <mxGraphModel dx="3696" dy="1620" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-1" value="Part 1.1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="340" y="10" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-2" target="5CeKLcT-XpHNVdCLp_hz-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-2" target="5CeKLcT-XpHNVdCLp_hz-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-2" value="call example .las API url using requests.get" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="110" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-3" target="5CeKLcT-XpHNVdCLp_hz-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-3" value="convert .las to .tif using arcpy.conversion.LasDatasetToRaster" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="120" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-5" target="5CeKLcT-XpHNVdCLp_hz-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-5" value="convert .las to .tin using arcpy.ddd.LasDatasetToTin" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="230" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-7" target="5CeKLcT-XpHNVdCLp_hz-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-7" value="Create layouts of the .tif and .tin" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="100" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-11" target="5CeKLcT-XpHNVdCLp_hz-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-11" value="identify all layouts in the project" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-13" value="Export both layouts as pdfs" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="680" y="250" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-15" value="Part 1.2" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="340" y="380" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-16" target="5CeKLcT-XpHNVdCLp_hz-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-16" value="in ArcGIS Pro, go to Insert -&amp;gt; New Map -&amp;gt; New Local Scene" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="30" y="460" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-17" target="5CeKLcT-XpHNVdCLp_hz-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-17" value="Add sample.las dataset to new local scene" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-19" target="5CeKLcT-XpHNVdCLp_hz-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-19" value="Create new horizontal tab group for new local scene" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="480" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-21" value="View 2D and 3D displays of the sample.las data side-by-side" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="590" y="490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-23" value="Part 1.3" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="360" y="640" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-24" target="5CeKLcT-XpHNVdCLp_hz-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-24" value="use requests.get to call PRISM .bil dataset and open the zipfile" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="40" y="760" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-25" target="5CeKLcT-XpHNVdCLp_hz-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-25" value="Create empty mosaic dataset using arcpy.management.CreateMosaicDataset" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="790" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-27">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="695" y="940" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-27" value="Add PRISM .bil dataset to the mosaic dataset using arcpy.management.AddRastersToMosaicDataset" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="780" width="290" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-31" target="5CeKLcT-XpHNVdCLp_hz-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-31" value="Add a new field for precipitation data using arcpy.management.CalculateField" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="597.5" y="940" width="195" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-32" target="5CeKLcT-XpHNVdCLp_hz-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-32" value="Add date information to the precipitation data using arcpy.management.CalculateField" style="ellipse;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="295" y="930" width="210" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-34" target="5CeKLcT-XpHNVdCLp_hz-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-34" value="Build multidimensional information using newly-created field with arcpy.md.BuildMultiDimensionalInfo" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="940" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-36" target="5CeKLcT-XpHNVdCLp_hz-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-36" value="Create multidimensional raster layer using arcpy.md.MakeMultidimensionalRasterLayer" style="ellipse;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-15" y="1070" width="270" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-38" value="Create spacetime cube from multidimensional raster layer using arcpy.stpm.CreateSpaceTimeCubeMDRasterLayer" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="300" y="1080" width="290" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-40" value="Part 2" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="330" y="1370" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-41" target="5CeKLcT-XpHNVdCLp_hz-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-41" value="MN Geospatial Commons search datasets for landuse data" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="130" y="1480" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-42" target="5CeKLcT-XpHNVdCLp_hz-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-42" value="request.get for relevant landuse dataset" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="125" y="1620" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-44" value="download and unzip landuse data" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="142.5" y="1830" width="85" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-48" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-46" target="5CeKLcT-XpHNVdCLp_hz-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-46" value="MN Geospatial Commons search for counties data" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="340" y="1490" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-50" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-47" target="5CeKLcT-XpHNVdCLp_hz-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-47" value="request.get for relevant landuse dataset" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="1620" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-52" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-49" target="5CeKLcT-XpHNVdCLp_hz-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-49" value="download and unzip landuse data" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="345" y="1715" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-56" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-51" target="5CeKLcT-XpHNVdCLp_hz-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-51" value="clip out wabasha, winona, and olmstead county" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="1830" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-99" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-55" target="5CeKLcT-XpHNVdCLp_hz-98">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-55" value="Clip landuse data with county data" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="325" y="1930" width="130" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.005;entryY=0.598;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-44" target="5CeKLcT-XpHNVdCLp_hz-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-60" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-58" target="5CeKLcT-XpHNVdCLp_hz-59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-58" value="Create for-loop that calls and opens all the .laz files covering the area of interest for Dory&#39;s walk" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="550" y="1460" width="130" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-62" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-59" target="5CeKLcT-XpHNVdCLp_hz-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-59" value="convert all .laz to .laz" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="555" y="1620" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-64" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-61" target="5CeKLcT-XpHNVdCLp_hz-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-61" value="convert all .las to DEM" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="575" y="1720" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-77" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-63" target="5CeKLcT-XpHNVdCLp_hz-76">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-63" value="merge all DEM into one raster .tif" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="555" y="1830" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-70" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-65" target="5CeKLcT-XpHNVdCLp_hz-68">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-65" value="create feature class for Dory&#39;s starting point" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="740" y="1880" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-69" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-66" target="5CeKLcT-XpHNVdCLp_hz-68">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-66" value="Create point with lat/long coords of Dory&#39;s starting point" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="850" y="1880" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-91" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-68">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="620" y="2280" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="710" y="2125" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-109" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-68">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="850" y="2740" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="853" y="2448" />
+              <mxPoint x="851" y="2740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-68" value="Insert point into feature class" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="792.5" y="2095" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-71" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" source="5CeKLcT-XpHNVdCLp_hz-72" target="5CeKLcT-XpHNVdCLp_hz-75" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-72" value="create feature class for Dory&#39;s ending point" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="980" y="1880" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-73" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" source="5CeKLcT-XpHNVdCLp_hz-74" target="5CeKLcT-XpHNVdCLp_hz-75" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-74" value="Create point with lat/long coords of Dory&#39;s ending point" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="1880" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-93" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-75" target="5CeKLcT-XpHNVdCLp_hz-86">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1090" y="2530" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1093" y="2343" />
+              <mxPoint x="1091" y="2550" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-117" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-75">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1290" y="2750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-75" value="Insert point into feature class" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1032.5" y="2095" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-79" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-76" target="5CeKLcT-XpHNVdCLp_hz-78">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-76" value="fill DEM with arcpy.sa.Fill" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="575" y="1930" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-81" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-78" target="5CeKLcT-XpHNVdCLp_hz-80">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-78" value="Calculate slope for filled DEM" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="555" y="2030" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-83" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-80" target="5CeKLcT-XpHNVdCLp_hz-82">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="615" y="2300" />
+              <mxPoint x="500" y="2300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-85" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-80" target="5CeKLcT-XpHNVdCLp_hz-84">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="615" y="2290" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="615" y="2300" />
+              <mxPoint x="740" y="2300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-80" value="Reclassify slope raster to have clean integer classes" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="562.5" y="2140" width="105" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-87" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-82" target="5CeKLcT-XpHNVdCLp_hz-86">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="500" y="2440" />
+              <mxPoint x="620" y="2440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-82" value="use slope class raster and Dory start point to create cost-distance raster with arcpy.sa.CostDistance" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="2350" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-89" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-84">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="750" y="2430" as="sourcePoint" />
+            <mxPoint x="620" y="2480" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="740" y="2440" />
+              <mxPoint x="620" y="2440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-84" value="use slope class raster and Dory start point to create back-link raster with arcpy.sa.CostBackLink" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="2350" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-102" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-86" target="5CeKLcT-XpHNVdCLp_hz-101">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-86" value="use cost-distance and back-link rasters and Dory end point to create cost-path raster using arcpy.sa.CostPath" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="2480" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-97" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-94" target="5CeKLcT-XpHNVdCLp_hz-96">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-94" value="export extent of raster to further reduce size and processing time" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="245" y="2190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-111" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-96">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="610" y="2740" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="305" y="2605" />
+              <mxPoint x="306" y="2770" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-96" value="reclassify landuse raster to consolidate redundant landuse types" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="2325" width="110" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-100" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-98" target="5CeKLcT-XpHNVdCLp_hz-94">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-98" value="Convert landuse dataset to raster" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="2055" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-104" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-101" target="5CeKLcT-XpHNVdCLp_hz-103">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="910" y="2740" />
+              <mxPoint x="910" y="2675" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-107" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-101" target="5CeKLcT-XpHNVdCLp_hz-106">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="910" y="2740" />
+              <mxPoint x="910" y="2850" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-101" value="weight slope and land use variables appropriately using arcpy.sa.WeightedOverlay" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="612.5" y="2710" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-113" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-103" target="5CeKLcT-XpHNVdCLp_hz-112">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-103" value="make cost-distance with dory start point and weighted raster" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1032.5" y="2630" width="97.5" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-115" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-106" target="5CeKLcT-XpHNVdCLp_hz-112">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1210" y="2840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-106" value="make back-link with dory start point and weighted raster" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1032.5" y="2790" width="97.5" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-119" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-112" target="5CeKLcT-XpHNVdCLp_hz-120">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="760" y="2990" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1400" y="2915" />
+              <mxPoint x="1401" y="3050" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-112" value="create cost-path raster using cost-distance, back-link, and Dory endpoint" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1340" y="2720" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-121" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5CeKLcT-XpHNVdCLp_hz-120" target="5CeKLcT-XpHNVdCLp_hz-101">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="720" y="2800" />
+              <mxPoint x="720" y="2800" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5CeKLcT-XpHNVdCLp_hz-120" value="repeat weighting step with different weight values to find other paths." style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="653.75" y="2867.5" width="132.5" height="132.5" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
