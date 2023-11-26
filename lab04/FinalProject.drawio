@@ -1,9 +1,93 @@
-<mxfile host="app.diagrams.net" modified="2023-11-24T23:19:42.099Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 OPR/104.0.0.0" version="22.1.3" etag="vcBwy6xiU5bSVbbAVMqo" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-26T03:19:29.945Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 OPR/104.0.0.0" etag="NGFg_bImYoHThnOhisLL" version="22.1.4" type="github">
   <diagram name="Page-1" id="3ybHBa5A0ViFiT-rPvGm">
-    <mxGraphModel>
+    <mxGraphModel dx="996" dy="567" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="b2HMM2OM7tlzME3mByns-1" value="Prairie Site Selection" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="365" y="40" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="b2HMM2OM7tlzME3mByns-2" value="Data Requests" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="140" y="160" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="b2HMM2OM7tlzME3mByns-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="b2HMM2OM7tlzME3mByns-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140" y="600" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="86" y="600" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b2HMM2OM7tlzME3mByns-3" value="MN parcel dataset request from MN Geospatial Commons" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="40" y="280" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="b2HMM2OM7tlzME3mByns-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="b2HMM2OM7tlzME3mByns-4" target="b2HMM2OM7tlzME3mByns-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b2HMM2OM7tlzME3mByns-4" value="MN counties dataset request from MN Geospatial Commons" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="160" y="280" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="b2HMM2OM7tlzME3mByns-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="b2HMM2OM7tlzME3mByns-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="270" y="600" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="326" y="600" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b2HMM2OM7tlzME3mByns-5" value="MN native prairies dataset request from MN Geospatial Commons" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="280" y="280" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="b2HMM2OM7tlzME3mByns-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="b2HMM2OM7tlzME3mByns-6" target="b2HMM2OM7tlzME3mByns-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b2HMM2OM7tlzME3mByns-6" value="Export out Dakota County" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="145" y="430" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b2HMM2OM7tlzME3mByns-8" value="Clip MN Parcels and MN Prairies to Dakota County" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="145" y="570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b2HMM2OM7tlzME3mByns-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="b2HMM2OM7tlzME3mByns-14" target="b2HMM2OM7tlzME3mByns-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b2HMM2OM7tlzME3mByns-14" value="Convert MN Parcels attribute table to Numpy Array" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="560" y="280" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="b2HMM2OM7tlzME3mByns-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="727.5" y="370" as="sourcePoint" />
+            <mxPoint x="665.0000000000018" y="1021.875" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="728" y="690" />
+              <mxPoint x="729" y="690" />
+              <mxPoint x="729" y="1022" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b2HMM2OM7tlzME3mByns-15" value="Convert MN Prairies attribute table to Numpy Array" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="680" y="280" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="b2HMM2OM7tlzME3mByns-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="b2HMM2OM7tlzME3mByns-16" target="b2HMM2OM7tlzME3mByns-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b2HMM2OM7tlzME3mByns-16" value="Convert land classification fields into integer values" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="545" y="465" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b2HMM2OM7tlzME3mByns-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="b2HMM2OM7tlzME3mByns-18" target="b2HMM2OM7tlzME3mByns-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b2HMM2OM7tlzME3mByns-18" value="Iterate through parcel ownership fields to determine which parcels are owned by FWS or DNR and add all others to &#39;prospective parcels&#39;&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="528.75" y="600" width="152.5" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="b2HMM2OM7tlzME3mByns-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="b2HMM2OM7tlzME3mByns-20" target="b2HMM2OM7tlzME3mByns-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b2HMM2OM7tlzME3mByns-20" value="Apply a masking array to create data frames that show which land is FWS, DNR, or prospective parcels" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="542.5" y="822.5" width="125" height="87.5" as="geometry" />
+        </mxCell>
+        <mxCell id="b2HMM2OM7tlzME3mByns-22" value="Calculate the centroids of FWS, DNR, and prospective parcels as well as of MN Prairies" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="547.5" y="970" width="115" height="103.75" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
