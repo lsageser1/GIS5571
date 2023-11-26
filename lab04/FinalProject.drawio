@@ -1,13 +1,10 @@
-<mxfile host="app.diagrams.net" modified="2023-11-26T03:19:29.945Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 OPR/104.0.0.0" etag="NGFg_bImYoHThnOhisLL" version="22.1.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-26T03:51:19.315Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 OPR/104.0.0.0" etag="A02hc6VDSsrpK-AtthCo" version="22.1.4" type="github">
   <diagram name="Page-1" id="3ybHBa5A0ViFiT-rPvGm">
-    <mxGraphModel dx="996" dy="567" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1532" dy="872" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="b2HMM2OM7tlzME3mByns-1" value="Prairie Site Selection" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="365" y="40" width="120" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="b2HMM2OM7tlzME3mByns-2" value="Data Requests" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+        <mxCell id="b2HMM2OM7tlzME3mByns-2" value="Data Setup" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="140" y="160" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="b2HMM2OM7tlzME3mByns-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="b2HMM2OM7tlzME3mByns-3">
@@ -44,6 +41,17 @@
         <mxCell id="b2HMM2OM7tlzME3mByns-6" value="Export out Dakota County" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="145" y="430" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="b2HMM2OM7tlzME3mByns-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="b2HMM2OM7tlzME3mByns-8" target="b2HMM2OM7tlzME3mByns-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="210" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="206" y="680" />
+              <mxPoint x="460" y="680" />
+              <mxPoint x="460" y="210" />
+              <mxPoint x="605" y="210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="b2HMM2OM7tlzME3mByns-8" value="Clip MN Parcels and MN Prairies to Dakota County" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="145" y="570" width="120" height="60" as="geometry" />
         </mxCell>
@@ -53,14 +61,14 @@
         <mxCell id="b2HMM2OM7tlzME3mByns-14" value="Convert MN Parcels attribute table to Numpy Array" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
           <mxGeometry x="560" y="280" width="90" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="b2HMM2OM7tlzME3mByns-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1">
+        <mxCell id="b2HMM2OM7tlzME3mByns-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="b2HMM2OM7tlzME3mByns-22">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="727.5" y="370" as="sourcePoint" />
             <mxPoint x="665.0000000000018" y="1021.875" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="728" y="690" />
-              <mxPoint x="729" y="690" />
-              <mxPoint x="729" y="1022" />
+              <mxPoint x="730" y="370" />
+              <mxPoint x="730" y="690" />
+              <mxPoint x="729" y="902" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -71,22 +79,50 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="b2HMM2OM7tlzME3mByns-16" value="Convert land classification fields into integer values" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="545" y="465" width="120" height="60" as="geometry" />
+          <mxGeometry x="545" y="420" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="b2HMM2OM7tlzME3mByns-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="b2HMM2OM7tlzME3mByns-18" target="b2HMM2OM7tlzME3mByns-20">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="b2HMM2OM7tlzME3mByns-18" value="Iterate through parcel ownership fields to determine which parcels are owned by FWS or DNR and add all others to &#39;prospective parcels&#39;&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="528.75" y="600" width="152.5" height="160" as="geometry" />
+          <mxGeometry x="527.5" y="520" width="152.5" height="160" as="geometry" />
         </mxCell>
         <mxCell id="b2HMM2OM7tlzME3mByns-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="b2HMM2OM7tlzME3mByns-20" target="b2HMM2OM7tlzME3mByns-22">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="b2HMM2OM7tlzME3mByns-20" value="Apply a masking array to create data frames that show which land is FWS, DNR, or prospective parcels" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="542.5" y="822.5" width="125" height="87.5" as="geometry" />
+          <mxGeometry x="542.5" y="721.5699999999999" width="125" height="87.5" as="geometry" />
+        </mxCell>
+        <mxCell id="b2HMM2OM7tlzME3mByns-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="b2HMM2OM7tlzME3mByns-22" target="b2HMM2OM7tlzME3mByns-29">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="b2HMM2OM7tlzME3mByns-22" value="Calculate the centroids of FWS, DNR, and prospective parcels as well as of MN Prairies" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="547.5" y="970" width="115" height="103.75" as="geometry" />
+          <mxGeometry x="547.5" y="850" width="115" height="103.75" as="geometry" />
+        </mxCell>
+        <mxCell id="b2HMM2OM7tlzME3mByns-28" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="b2HMM2OM7tlzME3mByns-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="210" as="sourcePoint" />
+            <mxPoint x="730" y="210" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="660" y="210" />
+              <mxPoint x="725" y="210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b2HMM2OM7tlzME3mByns-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="b2HMM2OM7tlzME3mByns-29" target="b2HMM2OM7tlzME3mByns-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b2HMM2OM7tlzME3mByns-29" value="Use Scikit learn&#39;s nearest neighbor function balltree algorithm to calculate distances from parcel centroids to closest FWS, DNR, and MN Prairie centroids" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="862.81" width="200" height="78.12" as="geometry" />
+        </mxCell>
+        <mxCell id="b2HMM2OM7tlzME3mByns-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="b2HMM2OM7tlzME3mByns-31" target="b2HMM2OM7tlzME3mByns-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b2HMM2OM7tlzME3mByns-31" value="Calculate dollars per acre value of parcels and adds to prospective parcels data frame" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="851.88" width="165" height="101.87" as="geometry" />
+        </mxCell>
+        <mxCell id="b2HMM2OM7tlzME3mByns-33" value="Data is now human-readable and we can select training datasets" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="72.5" y="735.3250000000002" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
