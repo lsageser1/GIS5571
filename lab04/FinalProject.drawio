@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-18T04:41:38.408Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 OPR/105.0.0.0" etag="MThfquTNHuBmyuvVL1t0" version="22.1.11" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2023-12-18T04:46:16.470Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 OPR/105.0.0.0" etag="2mSBxZVHD-ySpc5StFCy" version="22.1.11" type="github" pages="2">
   <diagram name="Page-1" id="3ybHBa5A0ViFiT-rPvGm">
     <mxGraphModel dx="996" dy="567" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -162,6 +162,12 @@
         </mxCell>
         <mxCell id="CNHxVV8AHuUAZgV5d8pi-8" value="Repeat process until ~200 negative training parcels are in the negative training numpy array and then export those features as the negative training dataset" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="210" y="230" width="380" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CNHxVV8AHuUAZgV5d8pi-9" value="Create Positive Training Data" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="330" y="300" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="CNHxVV8AHuUAZgV5d8pi-10" value="Positive training dataset was created using expert selection analysis. It was not practical to mimic the same method as the negative training data selection because the vast majority of randomly selected parcels are not adjacent or close enough to prairies or conservation land, so it would be too time-consuming to continue selecting random samples of parcels until ~200 viable positive training parcels were found. Large quantities of parcels that were spatially adjacent to desired land types were manually selected, and then reviewed to discard parcels that were too expensive or of an undesired land type." style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="55" y="410" width="680" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
