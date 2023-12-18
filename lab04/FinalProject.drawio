@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-18T04:46:26.907Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 OPR/105.0.0.0" etag="4EM7DRU4gv2EsQVcJ2mC" version="22.1.11" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2023-12-18T05:03:03.361Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 OPR/105.0.0.0" etag="8nTl2J_b2yoFEprebylf" version="22.1.11" type="github" pages="3">
   <diagram name="Page-1" id="3ybHBa5A0ViFiT-rPvGm">
     <mxGraphModel dx="996" dy="567" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -177,6 +177,105 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="gPRMZFs6l2teYSI6PfBB-1" value="Create, Train, and Execute SVM" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="250" y="30" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gPRMZFs6l2teYSI6PfBB-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="gPRMZFs6l2teYSI6PfBB-2" target="gPRMZFs6l2teYSI6PfBB-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gPRMZFs6l2teYSI6PfBB-2" value="Create set of specified fields that SVM will focus on" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="80" y="120" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="gPRMZFs6l2teYSI6PfBB-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="gPRMZFs6l2teYSI6PfBB-3" target="gPRMZFs6l2teYSI6PfBB-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gPRMZFs6l2teYSI6PfBB-3" value="Pass data frame by value so that it only references specified analysis fields" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gPRMZFs6l2teYSI6PfBB-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="gPRMZFs6l2teYSI6PfBB-5" target="gPRMZFs6l2teYSI6PfBB-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gPRMZFs6l2teYSI6PfBB-5" value="Load training data into numpy array and search the parcels for the training parcels" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="65" y="400" width="130" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="gPRMZFs6l2teYSI6PfBB-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="gPRMZFs6l2teYSI6PfBB-7" target="gPRMZFs6l2teYSI6PfBB-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gPRMZFs6l2teYSI6PfBB-7" value="Create masks for positive and negative training data to associate them to the prospective parcels data" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="432.5" width="160" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="gPRMZFs6l2teYSI6PfBB-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="gPRMZFs6l2teYSI6PfBB-9" target="gPRMZFs6l2teYSI6PfBB-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gPRMZFs6l2teYSI6PfBB-9" value="Remove NANs from data" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="290" y="280" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gPRMZFs6l2teYSI6PfBB-13" value="Input new index to get back old index format after removing the NANs messed up original index format" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="360" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gPRMZFs6l2teYSI6PfBB-15" value="" style="endArrow=classic;html=1;rounded=0;exitX=-0.001;exitY=0.623;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="gPRMZFs6l2teYSI6PfBB-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="320" as="sourcePoint" />
+            <mxPoint x="330" y="397" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gPRMZFs6l2teYSI6PfBB-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="gPRMZFs6l2teYSI6PfBB-16" target="gPRMZFs6l2teYSI6PfBB-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gPRMZFs6l2teYSI6PfBB-16" value="Generate training data from masks!" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="530" y="425" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gPRMZFs6l2teYSI6PfBB-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="gPRMZFs6l2teYSI6PfBB-18" target="gPRMZFs6l2teYSI6PfBB-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gPRMZFs6l2teYSI6PfBB-18" value="Normalize training data using fit and transform method" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="435" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gPRMZFs6l2teYSI6PfBB-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="gPRMZFs6l2teYSI6PfBB-20" target="gPRMZFs6l2teYSI6PfBB-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gPRMZFs6l2teYSI6PfBB-20" value="Simplify data using PCA" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="690" y="310" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gPRMZFs6l2teYSI6PfBB-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="gPRMZFs6l2teYSI6PfBB-22" target="gPRMZFs6l2teYSI6PfBB-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gPRMZFs6l2teYSI6PfBB-22" value="Separate the data using Radial Basis Function Support Vector Machine" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gPRMZFs6l2teYSI6PfBB-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="gPRMZFs6l2teYSI6PfBB-25" target="gPRMZFs6l2teYSI6PfBB-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gPRMZFs6l2teYSI6PfBB-25" value="Generate PCA plots to show that data is separable&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gPRMZFs6l2teYSI6PfBB-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="gPRMZFs6l2teYSI6PfBB-27" target="gPRMZFs6l2teYSI6PfBB-29">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="640" y="120" />
+              <mxPoint x="640" y="80" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gPRMZFs6l2teYSI6PfBB-27" value="Add field for a confidence value and a distance from desired land column to parcels data" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="60" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="gPRMZFs6l2teYSI6PfBB-29" value="Select top 100 parcels with highest confidence values and exports as layer" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="480" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gPRMZFs6l2teYSI6PfBB-32" value="Select bottom 100 parcels with lowest confidence values and exports as layer" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="480" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gPRMZFs6l2teYSI6PfBB-33" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="gPRMZFs6l2teYSI6PfBB-32">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="670" y="120" as="sourcePoint" />
+            <mxPoint x="450" y="270" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="640" y="120" />
+              <mxPoint x="640" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
