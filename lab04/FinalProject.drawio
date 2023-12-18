@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-18T05:10:43.490Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 OPR/105.0.0.0" etag="8Cc0FVszabbacKGmkiOC" version="22.1.11" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2023-12-18T05:12:39.491Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 OPR/105.0.0.0" etag="PsSaScnLCbWpPIfWgZeN" version="22.1.11" type="github" pages="4">
   <diagram name="Page-1" id="3ybHBa5A0ViFiT-rPvGm">
     <mxGraphModel dx="996" dy="567" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -321,19 +321,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="DLEo4U5Z2BGJnbmEsOXX-11" value="Create weighted overlay raster from three input rasters, each with equal weights" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="380" y="235" width="120" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="DLEo4U5Z2BGJnbmEsOXX-12" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="DLEo4U5Z2BGJnbmEsOXX-3" target="DLEo4U5Z2BGJnbmEsOXX-11">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="400" y="320" as="sourcePoint" />
-            <mxPoint x="450" y="270" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="DLEo4U5Z2BGJnbmEsOXX-14" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="DLEo4U5Z2BGJnbmEsOXX-9" target="DLEo4U5Z2BGJnbmEsOXX-11">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="400" y="320" as="sourcePoint" />
-            <mxPoint x="450" y="270" as="targetPoint" />
-          </mxGeometry>
+          <mxGeometry x="425" y="235" width="120" height="120" as="geometry" />
         </mxCell>
         <mxCell id="DLEo4U5Z2BGJnbmEsOXX-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DLEo4U5Z2BGJnbmEsOXX-15" target="DLEo4U5Z2BGJnbmEsOXX-17">
           <mxGeometry relative="1" as="geometry" />
@@ -343,6 +331,18 @@
         </mxCell>
         <mxCell id="DLEo4U5Z2BGJnbmEsOXX-17" value="Repeat this confusion matrix assessment process using expert analysis" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="630" y="405" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DLEo4U5Z2BGJnbmEsOXX-19" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="DLEo4U5Z2BGJnbmEsOXX-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="296" y="186" as="sourcePoint" />
+            <mxPoint x="411" y="296" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DLEo4U5Z2BGJnbmEsOXX-20" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="DLEo4U5Z2BGJnbmEsOXX-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="320" as="sourcePoint" />
+            <mxPoint x="410" y="295" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
